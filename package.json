@@ -1,12 +1,21 @@
 {
-  "name": "webcrawler",
+  "name": "seo_link_analyzer",
   "version": "1.0.0",
   "description": "webcrawler project for boot.dev course",
   "main": "index.js",
-  "type": "modules",
+  "type": "module",
   "scripts": {
-      "start": "node main.js"
+    "start": "node main.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "author": "",
-  "license": "ISC"
+  "jest": {
+    "transform": {}
+  },
+  "author": "wagslane",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "jsdom": "^24.0.0"
+  }
 }
